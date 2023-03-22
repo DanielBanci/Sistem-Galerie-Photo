@@ -1,0 +1,33 @@
+Album1 48.21
+#0101 1.57
+#0010 2.58
+#1100 3.10
+Album2 27.5
+#1111 2.37
+#0011 3.87
+#0110 2.98
+
+ ///*Albums *pp;
+    ///pp = albums.first;
+    Picture *p;
+    Album *aux;
+    aux = albums->first;
+    p = albums->first->first_pic; //albums->first->first_pic;
+    //while(pp != NULL){
+    printf("Nume album: %s , size= %.2f\n",album->album_name,album->size);
+    while(p->next != albums->first->first_pic){
+        printf("%d. %s , size %f\n",p->index,p->name,p->size);
+        p = p->next;
+    }
+    printf("%d. %s , size %f\n",p->index,p->name,p->size);
+
+    p = albums->first->next->first_pic;
+    //while(pp != NULL){
+    printf("Nume album: %s , size= %.2f\n",album->next->album_name,album->next->size);
+    while(p->next != albums->first->next->first_pic){
+        printf("%d. %s , size %f\n",p->index,p->name,p->size);
+        p = p->next;
+    }
+    printf("%d. %s , size %f\n",p->index,p->name,p->size);
+    //pp = pp->first->next;
+    //}
